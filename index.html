@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart - Your Favorite Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.0/scrollreveal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">ShopSmart</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#" id="cart-link">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="cart-popup" class="popup hidden">
+        <div class="popup-content">
+            <h3>Your Cart</h3>
+            <p>Your cart is currently empty!</p>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+<section class="home" id="home">
+    <div class="hero-content">
+        <h1>Welcome to ShopSmart</h1>
+        <p>Your one-stop destination for the best deals on top-quality products!</p>
+        
+        <!-- Catchy Phrase -->
+        <h2 class="catchy-phrase">Unbeatable Prices, Unmatched Quality – Shop Your Favorites Today!</h2>
+        
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+</section>
+
+
+    <!-- Products Section -->
+    <!-- Products Section -->
+<section class="products" id="products">
+    <h2>Featured Products</h2>
+    <p>Explore our wide range of products designed to make your life easier and more enjoyable. From gadgets to home decor, we've got it all!</p>
+    <div class="product-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card" data-id="1">
+            <img src="smartphone.jpg" alt="Product 1">
+            <h3><a href="smartphone.html">Smartphone Pro X</a></h3>
+            <p>Experience cutting-edge technology with the SmartPhone Pro X. High-speed processing, amazing camera, and long battery life.</p>
+            <p class="price">₹25000</p>
+            <a href="product1.html" class="btn">View Details</a>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card" data-id="1">
+            <img src="headphone.jpg" alt="Product 2" height="200px">
+            <h3><a href="headphone.html">Wireless headphone</a></h3>
+            <p>Enjoy rich sound quality and comfort with our new wireless headphones. Perfect for music lovers and frequent travelers.</p><br>
+            <p class="price">₹1000</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="home assistent.webp" alt="Product 3">
+            <h3><a href="homeAssistent.html">Smart Home Assistant</a></h3>
+            <p>Control your home with voice commands. Our smart assistant integrates with your lights, thermostat, and more.</p>
+            <p class="price">₹10000</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="smart watch.webp" alt="Product 4">
+            <h3><a href="watch.html">Smartwatch Series 7</a></h3>
+            <p>Track your fitness, monitor your heart rate, and stay connected with the new Smartwatch Series 7.</p>
+            <br>
+            <br>
+            <p class="price">₹1500</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card">
+            <img src="tv.jpg" alt="Product 5">
+            <h3><a href="tv.html">Smart Home Assistant</a></h3>
+            <p>Bring the cinema experience to your home with our 4K Ultra HD TV. Stunning clarity and vibrant colors.</p>
+            <br>
+            <p class="price">₹80000</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card">
+            <img src="speaker.jpg" alt="Product 6">
+            <h3><a href="speaker.html">Bluetooth Speaker</a></h3>
+            <p>Portable, powerful, and waterproof. Take your music everywhere with our Bluetooth speaker.</p>
+            <p class="price">₹2000</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <!-- Product Card 7 -->
+        <div class="product-card">
+            <img src="mouse.jpg" alt="Product 7">
+            <h3><a href="mouse.html">Wireless Mouse</a></h3>
+            <p>Upgrade your workspace with our ergonomic wireless mouse, designed for comfort and precision.</p>
+            <p class="price">₹600</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <!-- Product Card 8 -->
+        <div class="product-card">
+            <img src="leather bag.webp" alt="Product 8">
+            <h3><a href="bag.html">Leather Backpack</a></h3>
+            <p>Stylish and durable, this leather backpack is perfect for work, school, or travel.</p>
+            <br>
+            <p class="price">₹1500</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+</section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>ShopSmart is a leading online store that offers an extensive collection of products across various categories such as electronics, fashion, home goods, and more. Our mission is to provide high-quality products at unbeatable prices, ensuring that our customers receive the best value for their money.</p>
+        <h3>Why ShopSmart?</h3>
+        <ul>
+            <li><strong>High Quality</strong> – We offer top-tier products that are tested for durability and reliability.</li>
+            <li><strong>Affordable Prices</strong> – We believe in offering competitive prices to make quality accessible to everyone.</li>
+            <li><strong>Fast Shipping</strong> – Get your products delivered quickly with our efficient logistics network.</li>
+            <li><strong>Customer Support</strong> – Our customer support team is available to assist you 24/7 for any queries.</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <p>Here's what our satisfied customers have to say about ShopSmart:</p>
+    <div class="testimonial-cards">
+        <!-- Testimonial Card 1 -->
+        <div class="testimonial-card">
+            <p>"ShopSmart has made my shopping experience so much easier! The quality of the products is unmatched, and the delivery was faster than I expected!"</p>
+            <h4>Sarah K.</h4>
+            <p>Verified Buyer</p>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div class="testimonial-card">
+            <p>"I can't believe how affordable and high-quality the electronics are. I’ll definitely be returning for more purchases!"</p>
+            <h4>John D.</h4>
+            <p>Verified Buyer</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"I can't believe how affordable and high-quality the electronics are. I’ll definitely be returning for more purchases!"</p>
+            <h4>John D.</h4>
+            <p>Verified Buyer</p>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="testimonial-card">
+            <p>"I’ve been shopping online for years, and ShopSmart is hands down one of the best platforms I’ve come across. Great customer support!"</p>
+            <h4>Emily P.</h4>
+            <p>Verified Buyer</p>
+        </div>
+
+        <!-- Testimonial Card 4 (New Testimonial) -->
+        <div class="testimonial-card">
+            <p>"I was so impressed with the Smartwatch I bought from ShopSmart! The setup was easy, and it works perfectly with my phone. Highly recommend!"</p>
+            <h4>Michael S.</h4>
+            <p>Verified Buyer</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Us Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or inquiries, feel free to get in touch with us. We're here to help!</p>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" id="name" required>
+            <input type="email" placeholder="Your Email" id="email" required>
+            <textarea placeholder="Your Message" id="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ShopSmart. All rights reserved.</p>
+        <p><a href="privacy.html" style="color: #fff;">Privacy Policy</a> | <a href="terms.html" style="color: #fff;">Terms & Conditions</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
